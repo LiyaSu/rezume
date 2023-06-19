@@ -6,77 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="сайт, визитка, резюме, портфолио" />
     <meta name="description" content="Мой первый сайт-резюме."/>
+    <link rel="stylesheet" href="style.css">
     <title>МойСайт</title>
 </head>
 <body>
-    <img src="imges/img.ava.jpeg" width="200">
-    <h1>Лия Оганян</h1>
-    <p>Я начинающий <strong>Web-разработчик</strong>,  прохожу курс по программе <em>Junior Front End Developer и веб-дизайну.</em></p>
-    <p>Я люблю <em>читать, гулять co своими собаками и хочу научиться программировать.</em></p>
-    <hr>
-    <h3><strong>Мои социальные сети:</strong></h3>
+    <div class="container">
+        <div class="info">
+    <img src="imges/img.ava.jpeg" class="avatar">
+    <div class="info-text">
+    <h1>Лия Сулейманова</h1>
+    <p>Я начинающий <strong class="color0">Web-разработчик</strong>,  прохожу курс по программе <strong class="color0">Junior Frontend Developer и веб-дизайну.</strong></p>
+    <p>Я люблю читать, гулять co своими собаками и хочу научиться программировать.</p>
+    <h3><strong class="color0">Мои социальные сети:</strong></h3>
     <a href="https://www.instagram.com/_1ittslilya/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">Instagram</a>
-    <a href="https://vk.com/aidarovnal" target="_blank">VK</a>
     <a href="https://t.me/aidarovnal" target="_blank">Telegram</a>
-
-    <h3>Мои хобби</h3>
+    </div>
+</div>
+    
+    <div class="card">
+     <h3 class="color0">Мои хобби 📸</h3>
 
     <ol>
         <li>Читать зарубежные книги</li>
-        <li>Готовить еду разных стран</li>
+        <li>Готовить еду разных национальностей</li>
+        <li>Фотографировать красивые места на Polaroid</li>
         <li>Теннис</li>
     </ol>
+    </div>
 
-    <h3>Таблицы</h3>
+   <div class="table">
 
-    <table>
-      <thead>
-        <tr>
-             <th>Имя</th>
-             <th>Возраст</th>
-             <th>Должность</th>
-        </tr>
-      </thead>
+    <h3 class="color0">Мое обучение 📋</h3>
+
+    <table class="table-style">
       <tbody>
         <tr>
-            <td>Лия</td>
-            <td>19</td>
-            <td>Frondend developed </td>
+            <td>Медицинский колледж</td>
+            <td>2018-2022</td>
         </tr>
         
         <tr>
-            <td>Виктория</td>
-            <td>22</td>
-            <td>Web-designer </td>
+            <td>Курсы английского </td>
+            <td> с 10.11.2022</td>
         </tr>
         
         <tr>
-            <td>Егор</td>
-            <td>25</td>
-            <td>Backend developer</td>
+            <td>Бесплатный курс по программированию на YouTube </td>
+            <td>2 недели</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://result.school/" target="_blank">Курс Junior Frontend Developer ⬅️</a></td>
+            <td>с 05.06.23</td>
         </tr>
       </tbody>
     </table>
+</div>
+  
 
-    <h3>Связаться со мной</h3>
-    <form action="/">
-        <div>
+    <h3 class="color0">Связаться со мной 📞</h3>
+    <form>
+        <div class="row">
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
+    </div>
 
-        <div>
+        <div class="form-group">
             <label for="mesasage">Ваше сообщение:</label>
             <br>
-            <textarea id="mesasage" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
+            <textarea id="mesasage" cols="10" rows="1"></textarea>
         </div>
+        
 
-        <input type="submit" value="Отправить!"
+        <input class="btn" type="submit" value="Связаться">
     </form>
+</div>
 </body>
 </html>
